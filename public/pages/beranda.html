@@ -12,6 +12,7 @@
 </head>
 
 <body class="overflow-x-hidden lg:overflow-x-hidden">
+    <!-- Navbar -->
     <nav class="z-20 fixed top-0 w-screen bg-white lg:bg-transparent overflow-x-hidden drop-shadow-md">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between">
@@ -54,16 +55,17 @@
         </div>
     </nav>
 
+    <!-- Beranda -->
     <section class="flex flex-col justify-center mt-16 sm:mt-0">
-        <div class="w-screen">
+        <div class="">
             <div class="-mt-2 lg:-mt-24">
                 <img class="w-72 md:w-[36rem] lg:w-[44rem] z-10 absolute loading-normal"
                     src="/public/img/awan-depan.svg">
             </div>
             <div class="mt-56 w-screen">
-                <img class="absolute" src="/public/img/awan-belakang.svg"></img>
+                <img class="z-100 absolute" src="/public/img/awan-belakang.svg"></img>
             </div>
-            <div class="-mt-32 md:mt-20 mx-7 md:mx-56 lg:mx-auto z-20 relative lg:max-w-[600px]">
+            <div class="-mt-32 md:mt-20 mx-7 md:mx-56 lg:mx-auto z-[9] relative lg:max-w-[600px]">
                 <div class="rounded-2xl p-4 lg:p-28" style="background: rgba(255, 255, 255, 0.6);">
                     <div class="text-center px-5 py-5">
                         <h1 class="text-lg lg:text-4xl font-bold text-gray-900">Pemira KM ITERA 2022</h1>
@@ -82,15 +84,17 @@
                 </div>
             </div>
             <div class="-mt-24 md:-mt-56 lg:-mt-96 z-[8]">
-                <img class="object-center w-screen" src="/public/img/bg-berandaa.svg"></img>
+                <img class="object-center w-full" src="/public/img/bg-berandaa.svg"></img>
             </div>
         </div>
     </section>
 
-    <section class="py-8 px-4">
-        <h1 class="text-xl md:text-2xl lg:text-4xl text-center xl:text-left font-bold leading-relaxed py-4 mb-8">Tentang
+    <!-- Tentang Pemira-->
+    <section class="py-8 px-4 xl:hidden">
+        <h1 class="text-xl md:text-2xl lg:text-4xl text-center xl:text-left font-bold leading-relaxed py-4">Tentang
             Pemira </h1>
-        <div class="container md:pl-10 md:w-2/3">
+        <!-- desktop -->
+        <div class="container md:pl-10 md:w-2/3 hidden md:block xl:block 2xl:block">
             <p class="leading-7 mb-12 text-medium-mobile md:text-xl ">
                 PEMIRA KM ITERA 2021 merupakan kegiatan pemilihan presiden KM ITERA
                 yang akan memimpin kabinet KM ITERA di periode selanjutnya.
@@ -100,6 +104,7 @@
                 "Keberhasilan pemimpin diukur dari kemampuan mereka
                 dalam menyejahterakan umat yang mereka pimpin."
             </blockquote>
+
             <p class="text-center md:text-left mb-3">
                 - Abdurrahman Wahid -
             </p>
@@ -109,13 +114,48 @@
                 sebagai wujud perkembangan yang nyata dalam menjalankan kehidupan.
             </p>
         </div>
+
+        <!-- mobile -->
+        <div class="border-2 border-[#899443] rounded-lg shadow-[#bababa] shadow-md p-4 md:hidden">
+            <p class="lg:text-xl mb-4 lg:px-12 lg:pt-6">
+                PEMIRA KM ITERA 2021 merupakan kegiatan pemilihan presiden KM ITERA
+                yang akan memimpin kabinet KM ITERA di periode selanjutnya.
+            </p>
+            <p class="lg:text-xl font-semibold italic lg:px-12">
+                "Keberhasilan pemimpin diukur dari kemampuan mereka
+                dalam menyejahterakan umat yang mereka pimpin."
+            </p>
+            <p class="lg:text-xl mb-4 lg:px-12">
+                - Abdurrahman Wahid
+            </p>
+            <p class="lg:text-xl mb-4 lg:px-12 lg:pb-6">
+                Mari kita wujudkan kepemimpinan yang lebih baik daripada sebelumnya
+                sebagai wujud perkembangan yang nyata dalam menjalankan kehidupan.
+            </p>
+        </div>
     </section>
 
-    <div class="-mt-24 md:-mt-56 lg:-mt-96 z-[8]">
-        <img class="object-center w-screen" src="../img/Subtract.svg"></img>
+    <img class="hidden xl:block" src="./../img/Group 10.svg" alt="">
+
+    <!-- Tutorial Desktop-->
+    <div class="relative hidden xl:block">
+        <img src="./../img/Group 19.svg" alt="">
+        <div class="absolute top-20 left-50">
+            <section class="py-8 px-8">
+                <h1 class="text-xl md:text-2xl lg:text-4xl text-center xl:text-left font-bold leading-relaxed py-8">
+                    Tutorial
+                </h1>
+                <iframe class="rounded-xl  mx-auto w-[720px] h-[425px]" allow="autoplay; encrypted-media"
+                    allowfullscreen="" frameborder="0" height="auto"
+                    src="https://www.youtube.com/embed/8OxTG8plkz4?rel=0" width="auto">
+                    <img src="https://i2.ytimg.com/vi/mu1KSw28snI/0.jpg" />
+                </iframe>
+            </section>
+        </div>
     </div>
 
-    <section class="py-8 px-4 xl:container xl:mx-auto">
+    <!-- Tutorial Mobile-->
+    <section class="py-8 px-4 xl:hidden">
         <h1 class="text-xl md:text-2xl lg:text-4xl text-center xl:text-left font-bold leading-relaxed py-4">Tutorial
         </h1>
         <iframe class="rounded-xl w-full md:w-3/4 aspect-video mx-auto xl:w-3/5 xl:mx-0"
@@ -125,11 +165,58 @@
         </iframe>
     </section>
 
-    <div class="-mt-24 md:-mt-56 lg:-mt-96 z-[8]">
-        <img class="object-center w-screen" src="../img/Subtract.svg"></img>
+    <!-- Timeline Desktop -->
+    <div class="relative hidden xl:block">
+        <img src="./../img/Group 7.svg" class="w-full" alt="">
+        <!-- <div class="absolute top-20 left-50">
+            <section class="py-8 px-8">
+                <h1 class="text-xl md:text-2xl lg:text-4xl text-center font-bold leading-relaxed py-4">Timeline</h1>
+
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-4" id="timeline">
+
+                    <div
+                        class="w-32 md:w-40 p-4 text-center bg-gradient-to-br from-zinc-200 to-zinc-400 rounded-xl shadow-md shadow-zinc-500 flex flex-col justify-center mb-4 mx-auto">
+                        <h1 class="font-extrabold text-2xl md:text-4xl">22-23</h1>
+                        <h3 class="font-bold text-xs md:text-medium-mobile xl:text-xl">November</h3>
+                        <h5 class="font-bold text-xs md:text-medium-mobile xl:text-xl">2022</h5>
+                        <h5 class="text-white text-xs mt-2 md:text-sm xl:text-medium-mobile">Open Recruitment Presma
+                        </h5>
+                    </div>
+
+                    <div
+                        class="w-32 md:w-40 p-4 text-center bg-gradient-to-br from-zinc-200 to-zinc-400 rounded-xl shadow-md shadow-zinc-500 flex flex-col justify-center mb-4 mx-auto">
+                        <h1 class="font-extrabold text-2xl md:text-4xl">22-23</h1>
+                        <h3 class="font-bold text-xs md:text-medium-mobile xl:text-xl">November</h3>
+                        <h5 class="font-bold text-xs md:text-medium-mobile xl:text-xl">2022</h5>
+                        <h5 class="text-white text-xs mt-2 md:text-sm xl:text-medium-mobile">Open Recruitment Presma
+                        </h5>
+                    </div>
+
+                    <div
+                        class="w-32 md:w-40 p-4 text-center bg-gradient-to-br from-zinc-200 to-zinc-400 rounded-xl shadow-md shadow-zinc-500 flex flex-col justify-center mb-4 mx-auto">
+                        <h1 class="font-extrabold text-2xl md:text-4xl">22-23</h1>
+                        <h3 class="font-bold text-xs md:text-medium-mobile xl:text-xl">November</h3>
+                        <h5 class="font-bold text-xs md:text-medium-mobile xl:text-xl">2022</h5>
+                        <h5 class="text-white text-xs mt-2 md:text-sm xl:text-medium-mobile">Open Recruitment Presma
+                        </h5>
+                    </div>
+
+                    <div
+                        class="w-32 md:w-40 p-4 text-center bg-gradient-to-br from-zinc-200 to-zinc-400 rounded-xl shadow-md shadow-zinc-500 flex flex-col justify-center mb-4 mx-auto">
+                        <h1 class="font-extrabold text-2xl md:text-4xl">22-23</h1>
+                        <h3 class="font-bold text-xs md:text-medium-mobile xl:text-xl">November</h3>
+                        <h5 class="font-bold text-xs md:text-medium-mobile xl:text-xl">2022</h5>
+                        <h5 class="text-white text-xs mt-2 md:text-sm xl:text-medium-mobile">Open Recruitment Presma
+                        </h5>
+                    </div>
+
+                </div>
+            </section>
+        </div> -->
     </div>
 
-    <section class="py-8 px-4">
+    <!-- Timeline Mobile-->
+    <section class="py-8 px-4 xl:hidden">
         <h1 class="text-xl md:text-2xl lg:text-4xl text-center font-bold leading-relaxed py-4">Timeline</h1>
 
         <div class="grid grid-cols-2 gap-8 md:grid-cols-4" id="timeline">
