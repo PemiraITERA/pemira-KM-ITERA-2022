@@ -1,7 +1,6 @@
-// Get the container element
-const btn = document.querySelector('button.mobile-menu-button');
-const menu = document.querySelector('.mobile-menu');
+const toggleBtn = document.querySelector('#togle-nav-menu');
+const menu = document.querySelector('#nav-menu');
 
-btn.addEventListener('click', () =>{
-  menu.classList.toggle('hidden');
-})
+toggleBtn.addEventListener('click', function() {
+menu.classList.toggle('hidden');
+});
