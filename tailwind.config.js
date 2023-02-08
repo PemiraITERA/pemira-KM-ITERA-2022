@@ -12,13 +12,24 @@ module.exports = {
         'footer': "#291120", 
         'button-color': "#899443",
       },
+      // backgroundColor: {
+      //   'main': "#E6E7BA",
+      //   'main-bg': "#E6E7BA",
+      //   'second': "#FEFFEF",
+      //   'footer': "#291120", 
+      //   'button-color': "#899443",
+      //   'bg-none': "none",
+      // },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         typey : ["typey", "serif"],
         typeyItalic : ["typey-italic", "italic"],
       },
       fontSize: {
+<<<<<<< HEAD
         'extra-desktop' : '36px',
+=======
+>>>>>>> d366847731bce220f17aa4b639f54f8a06b0de69
         'normal-desktop': '24px',
         'normal-tablet': '20px',
         'normal-mobile': '12px',
