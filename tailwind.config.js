@@ -3,7 +3,10 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
-      backgroundColor: {
+      colors: {
+        transparent: 'transparent',
+        'black': "#000000",
+        'white' : "#FFFFFF",  
         'main': "#E6E7BA",
         'second': "#FEFFEF",
         'footer': "#291120", 
@@ -15,22 +18,23 @@ module.exports = {
         typeyItalic : ["typey-italic", "italic"],
       },
       fontSize: {
-        'normal-desktop': '24 px',
-        'normal-tablet': '20 px',
-        'normal-mobile': '12 px',
-        'big-desktop' : '48 px',
-        'Medium-desktop': '30 px',
-        'big-mobile': '28 px',
-        'medium-mobile': '24 px',
+        'extra-desktop' : '36px',
+        'normal-desktop': '24px',
+        'normal-tablet': '20px',
+        'normal-mobile': '12px',
+        'smole-mobile': '10px',
+        'big-desktop' : '48px',
+        'Medium-desktop': '30px',
+        'big-mobile': '28px',
+        'medium-mobile': '24px',
       },
       borderRadius: {
-        'big-desktop': '35 px',
-        'normal-decktop': '25 px',
-        'small-decktop': '20 px',
-
-        'normal-mobile' : '15 px',
-        'big-mobile' : '25 px',
-        'small-mobile' : '8 px',
+        'big-desktop': '35px',
+        'normal-desktop': '25px',
+        'small-desktop': '20px',
+        'normal-mobile' : '15px',
+        'big-mobile' : '25px',
+        'small-mobile' : '8px',
       }
     },
   },
