@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
-    font-family: "Poppins";
-    src: url("../public/font/Poppins-regular.ttf");
+    font-family: typey;
+    src: url("../../public/font/Typey.otf");
+}
+
+@font-face {
+    font-family: typey-italic;
+    src: url("../../public/font/Typey_Italic.otf");
 }
 
 * {
@@ -11,7 +18,7 @@
 }
 
 body {
-    @apply bg-[#D2D385];
+    @apply bg-main;
 }
 .active {
     @apply bg-[#899443];
