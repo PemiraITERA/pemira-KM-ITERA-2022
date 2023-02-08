@@ -26,10 +26,7 @@ module.exports = {
         typeyItalic : ["typey-italic", "italic"],
       },
       fontSize: {
-<<<<<<< HEAD
         'extra-desktop' : '36px',
-=======
->>>>>>> d366847731bce220f17aa4b639f54f8a06b0de69
         'normal-desktop': '24px',
         'normal-tablet': '20px',
         'normal-mobile': '12px',
