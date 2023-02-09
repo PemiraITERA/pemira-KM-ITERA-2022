@@ -2045,6 +2045,10 @@ body{
     margin-top: 56rem;
   }
 
+  .lg\:mt-6{
+    margin-top: 1.5rem;
+  }
+
   .lg\:block{
     display: block;
   }
