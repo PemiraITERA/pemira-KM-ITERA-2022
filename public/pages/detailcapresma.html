@@ -30,14 +30,14 @@
                 <ul class="hidden md:flex gap-2 items-center">
                     <li>
                         <a href="./beranda.html"
-                            class="bg-button-color px-6 py-2 rounded-tl-small-desktop rounded-br-small-desktop font-bold text-white">Beranda</a>
+                            class="font-bold text-lime-900 hover:bg-[#C0D057] px-6 py-2 hover:rounded-tl-small-desktop hover:rounded-br-small-desktop  hover:text-white">Beranda</a>
                     </li>
                     <li>
                         <a href="./capresma.html"
-                            class="font-bold text-lime-900 hover:bg-[#C0D057] px-6 py-2 hover:rounded-tl-small-desktop hover:rounded-br-small-desktop  hover:text-white">Capresma</a>
+                            class="bg-button-color px-6 py-2 rounded-tl-small-desktop rounded-br-small-desktop font-bold text-white">Capresma</a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="./beranda.html#timeline"
                             class="font-bold text-lime-900 hover:bg-[#C0D057] px-6 py-2 hover:rounded-tl-small-desktop hover:rounded-br-small-desktop  hover:text-white">Timeline</a>
                     </li>
                     <li>
@@ -56,7 +56,7 @@
                 <a href="./capresma.html" class="font-bold text-lime-900">Capresma</a>
             </li>
             <li class="py-2 m-2 px-3 bg-white rounded-normal-mobile active:bg-[#C0D057]">
-                <a href="#" class="font-bold text-lime-900">Timeline</a>
+                <a href="./beranda.html#timeline" class="font-bold text-lime-900">Timeline</a>
             </li>
             <li class="py-2 m-2 px-3 bg-white rounded-normal-mobile active:bg-[#C0D057]">
                 <a href="./daerahpemilih.html" class="font-bold text-lime-900">Lokasi Pemilihan</a>
@@ -81,10 +81,10 @@
         <div
             class="w-screen z-[15] absolute justify-center flex mt-[32rem] lg:mt-[52rem] text-center items-center font-bold">
             <button id="btnCV"
-                class="justify-center items-center flex text-sm md:text-base py-2 px-4 mx-3 w-32 border-2 border-[#899443] rounded-lg h-16 hover:bg-[#C0D057] bg-button-color text-white lg:w-48">CV</button>
+                class="justify-center items-center flex text-sm md:text-base py-2 px-4 mx-3 w-32 border-2 rounded-lg h-16 hover:bg-[#C0D057] bg-button-color text-white lg:w-48">CV</button>
 
             <button id="btnKampanye"
-                class="justify-center items-center flex text-sm md:text-base py-2 px-4 mx-3 w-32 border-2 border-[#899443] rounded-lg h-16 hover:bg-[#C0D057] bg-button-color text-white lg:w-48">Grand
+                class="justify-center items-center flex text-sm md:text-base py-2 px-4 mx-3 w-32 border-2 rounded-lg h-16 hover:bg-[#C0D057] bg-button-color text-white lg:w-48">Grand
                 Design</button>
         </div>
     </section>
@@ -92,7 +92,7 @@
     <section>
         <div class="mt-[34rem] lg:mt-[56rem] mx-8 lg:mx-0 p-20 pb-10 justify-center flex">
             <iframe
-                class="mx-auto z-40 rounded-xl border-2 border-[#899443] shadow-lg shadow-[#899443] lg:shadow-none lg:w-3/5 aspect-video"
+                class="z-40 rounded-xl border-2 border-[#899443] shadow-lg shadow-[#899443] lg:shadow-none lg:w-3/5 aspect-video"
                 allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0"
                 src="https://www.youtube.com/embed/8OxTG8plkz4?rel=0" width="auto" loading="lazy"></iframe>
         </div>
@@ -193,6 +193,13 @@
         </div>
     </section>
 
+    <div class="bottom-0 hidden md:flex lg:flex">
+        <img class="w-screen" src="/public/img/footer-desktop.svg" alt="" />
+    </div>
+    <div class="w-screen bottom-0 md:hidden lg:hidden">
+        <img src="/public/img/footer-mobile.svg" alt="" />
+    </div>
+
     <!-- Modal CV -->
     <div class="fixed hidden top-20 z-40 inset-x-0 pb-4 items-center justify-center" id="modalCV">
         <div
@@ -236,10 +243,6 @@
         </div>
         <div id="myBackdrop" class="opacity-25 fixed inset-0 -z-10 bg-black"></div>
     </div>
-
-    <footer class="absolute w-screen bg-second">
-        <img class="w-screen" src="/public/img/footer-beranda.svg" alt="">
-    </footer>
 
     <script>
         var modalCV = document.getElementById("modalCV");
