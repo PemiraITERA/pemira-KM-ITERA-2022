@@ -236,7 +236,8 @@
         var backdrop = document.getElementById("myBackdrop");
         var btnCV = document.getElementById("btnCV");
         var btnKampanye = document.getElementById("btnKampanye");
-        var closeBtn = document.getElementsByClassName("close")[0];
+        var closeBtnCV = document.getElementsByClassName("close")[0];
+        var closeBtnKampanye = document.getElementsByClassName("close")[1];
 
         btnCV.onclick = function() {
         modalCV.style.display = "flex";
@@ -244,16 +245,21 @@
         btnKampanye.onclick = function() {
         modalKampanye.style.display = "flex";
         }
-        closeBtn.onclick = function() {
+        closeBtnCV.onclick = function() {
         modalCV.style.display = "none";
+        }
+        closeBtnKampanye.onclick = function() {
         modalKampanye.style.display = "none";
         }
         window.onclick = function(event) {
-            if (event.target == modalCV || modalKampanye) {
+            if (event.target == modalCV) {
                 modalCV.style.display = "none";
-                modalKampanye.style.display = "none";
             }else if (event.target == backdrop){
                 modalCV.style.display = "none";
+            }
+            if (event.target == modalKampanye){
+                modalKampanye.style.display = "none";
+            } else if (event.target == backdrop){
                 modalKampanye.style.display = "none";
             }
         }
