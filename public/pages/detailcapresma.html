@@ -219,7 +219,7 @@
                 </div>
             </div>
         </div>
-        <div id="myBackdrop" class="opacity-25 fixed inset-0 -z-10 bg-black"></div>
+        <div id="Backdrop1" class="opacity-25 fixed inset-0 -z-10 bg-black"></div>
     </div>
 
     <!-- Modal Kampanye -->
@@ -241,13 +241,14 @@
                 </div>
             </div>
         </div>
-        <div id="myBackdrop" class="opacity-25 fixed inset-0 -z-10 bg-black"></div>
+        <div id="Backdrop2" class="opacity-25 fixed inset-0 -z-10 bg-black"></div>
     </div>
 
     <script>
         var modalCV = document.getElementById("modalCV");
         var modalKampanye = document.getElementById("modalKampanye");
-        var backdrop = document.getElementById("myBackdrop");
+        var backdrop1 = document.getElementById("Backdrop1");
+        var backdrop2 = document.getElementById("Backdrop2");
         var btnCV = document.getElementById("btnCV");
         var btnKampanye = document.getElementById("btnKampanye");
         var closeBtnCV = document.getElementsByClassName("close")[0];
@@ -268,12 +269,12 @@
         window.onclick = function (event) {
             if (event.target == modalCV) {
                 modalCV.style.display = "none";
-            } else if (event.target == backdrop) {
+            } else if (event.target == backdrop1) {
                 modalCV.style.display = "none";
             }
             if (event.target == modalKampanye) {
                 modalKampanye.style.display = "none";
-            } else if (event.target == backdrop) {
+            } else if (event.target == backdrop2) {
                 modalKampanye.style.display = "none";
             }
         }
