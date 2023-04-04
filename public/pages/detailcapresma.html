@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail capresma</title>
     <link rel="stylesheet" href="../css/detail.css" />
+    <link rel="preload" as="image" href="../img/capresma.svg">
 
     <script src="https://kit.fontawesome.com/861b96d111.js" crossorigin="anonymous"></script>
 </head>
@@ -29,14 +30,14 @@
                 <ul class="hidden md:flex gap-2 items-center">
                     <li>
                         <a href="./beranda.html"
-                            class="bg-button-color px-6 py-2 rounded-tl-small-desktop rounded-br-small-desktop font-bold text-white">Beranda</a>
+                            class="font-bold text-lime-900 hover:bg-[#C0D057] px-6 py-2 hover:rounded-tl-small-desktop hover:rounded-br-small-desktop  hover:text-white">Beranda</a>
                     </li>
                     <li>
                         <a href="./capresma.html"
-                            class="font-bold text-lime-900 hover:bg-[#C0D057] px-6 py-2 hover:rounded-tl-small-desktop hover:rounded-br-small-desktop  hover:text-white">Capresma</a>
+                            class="bg-button-color px-6 py-2 rounded-tl-small-desktop rounded-br-small-desktop font-bold text-white">Capresma</a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="./beranda.html#timeline"
                             class="font-bold text-lime-900 hover:bg-[#C0D057] px-6 py-2 hover:rounded-tl-small-desktop hover:rounded-br-small-desktop  hover:text-white">Timeline</a>
                     </li>
                     <li>
@@ -55,7 +56,7 @@
                 <a href="./capresma.html" class="font-bold text-lime-900">Capresma</a>
             </li>
             <li class="py-2 m-2 px-3 bg-white rounded-normal-mobile active:bg-[#C0D057]">
-                <a href="#" class="font-bold text-lime-900">Timeline</a>
+                <a href="./beranda.html#timeline" class="font-bold text-lime-900">Timeline</a>
             </li>
             <li class="py-2 m-2 px-3 bg-white rounded-normal-mobile active:bg-[#C0D057]">
                 <a href="./daerahpemilih.html" class="font-bold text-lime-900">Lokasi Pemilihan</a>
@@ -67,11 +68,11 @@
         <div class="w-screen absolute justify-center flex lg:justify-center z-[11]">
             <div class="w-56 text-center lg:w-[32rem]">
                 <div class="justify-center flex">
-                    <img src="/public/img/capresma.svg" alt="capresma" />
+                    <img src="../img/capresma.svg" alt="capresma" />
                 </div>
                 <h1 class="text-lg lg:text-2xl font-bold mt-8">Erza Refenza</h1>
-                <h1 class="text-lg lg:text-2xl lg:mt-8">120150036</h1>
-                <h1 class="text-lg lg:text-2xl lg:mt-8">Teknik Geologi</h1>
+                <h1 class="text-lg lg:text-2xl lg:mt-6">120150036</h1>
+                <h1 class="text-lg lg:text-2xl lg:mt-6">Teknik Geologi</h1>
             </div>
         </div>
         <div class="top-0 z-10">
@@ -80,23 +81,26 @@
         <div
             class="w-screen z-[15] absolute justify-center flex mt-[32rem] lg:mt-[52rem] text-center items-center font-bold">
             <button id="btnCV"
-                class="justify-center flex text-sm md:text-base py-2 px-4 mx-3 w-28 border-2 border-[#899443] rounded-lg text-[#899443]">CV</button>
+                class="justify-center items-center flex text-sm md:text-base py-2 px-4 mx-3 w-32 border-2 rounded-lg h-16 hover:bg-[#C0D057] bg-button-color text-white lg:w-48">CV</button>
+
             <button id="btnKampanye"
-                class="justify-center flex text-sm md:text-base py-2 px-4 mx-3 w-28 border-2 border-[#899443] bg-[#899443] rounded-lg text-[#FEFFEF]">Kampanye</button>
+                class="justify-center items-center flex text-sm md:text-base py-2 px-4 mx-3 w-32 border-2 rounded-lg h-16 hover:bg-[#C0D057] bg-button-color text-white lg:w-48">Grand
+                Design</button>
         </div>
     </section>
 
     <section>
         <div class="mt-[34rem] lg:mt-[56rem] mx-8 lg:mx-0 p-20 pb-10 justify-center flex">
             <iframe
-                class="z-40 rounded-xl border-2 border-[#899443] shadow-lg shadow-[#899443] lg:shadow-none lg:w-[480px] lg:h-[240px]"
+                class="z-40 rounded-xl border-2 border-[#899443] shadow-lg shadow-[#899443] lg:shadow-none lg:w-3/5 aspect-video"
                 allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0"
                 src="https://www.youtube.com/embed/8OxTG8plkz4?rel=0" width="auto" loading="lazy"></iframe>
         </div>
 
         <div class="my-10 md:mx-48 lg:mx-80">
             <h1 class="text-center font-bold lg:text-2xl">Visi :</h1>
-            <div class="rounded-xl border-4 border-[#899443] lg:shadow-none mx-7 mt-4 z-50 justify-center flex bg-transparent shadow-[40px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset]">
+            <div
+                class="rounded-xl border-4 border-[#899443] lg:shadow-none mx-7 mt-4 z-50 justify-center flex bg-transparent shadow-[40px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset]">
                 <h2 class="p-4 lg:p-8">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
                     maxime qui aut distinctio asperiores laudantium dolorem. Sint
@@ -108,37 +112,34 @@
 
         <div class="my-10 md:mx-48 lg:mx-80">
             <h1 class="text-center font-bold lg:text-2xl">Misi :</h1>
-            <div class="rounded-xl text-[#FEFFEF] border-2 border-[#899443] bg-[#899443] lg:shadow-none mx-7 mt-4 z-50 shadow-lime-900 shadow-lg">
+            <div
+                class="rounded-xl text-[#FEFFEF] border-2 border-[#899443] bg-[#899443] lg:shadow-none mx-7 mt-4 z-50 shadow-lime-900 shadow-lg">
                 <div class="flex flex-row">
                     <div
-                        class="bg-[#feffef] w-24 md:w-20 text-center m-4 mr-1 md:mr-4 rounded-b-small-mobile max-h-10 shadow-[40px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset]">
+                        class="bg-[#feffef] w-[15%] md:w-20 text-center m-4 mr-1 md:mr-4 rounded-b-small-mobile max-h-10 shadow-[40px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset]">
                         <p class="text-normal-desktop text-[#899443] font-extrabold">1.</p>
                     </div>
-                    <div class="m-4 ml-1 md:ml-4">
-                        <p class="text-smole-mobile md:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, hic? Officiis dolores,
-                            tenetur aliquam dolor laboriosam obcaecati non est vel?</p>
+                    <div class="m-4 ml-1 md:ml-4 w-[85%]">
+                        <p class="text-smole-mobile md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit enim molestiae ipsum possimus doloribus minima repudiandae qui praesentium iusto adipisci accusamus, quas doloremque minus maiores ex nulla debitis optio quasi dolores quidem! Impedit doloremque sit sunt eos quidem doloribus, optio libero, maxime ducimus quas quod neque, beatae quisquam? Eum, amet? Eius nesciunt tempora unde magnam itaque animi iusto, laborum tempore vitae perferendis optio dolore ut nisi recusandae eum vero. Placeat ex mollitia accusamus earum suscipit tempora repudiandae error fuga aut nulla qui soluta, natus itaque veniam, excepturi sint expedita eveniet eos? Consectetur neque excepturi corrupti laudantium, animi voluptas quae!?</p>
                         <div class="w-full h-1 bg-[#feffef] mt-2"></div>
                     </div>
                 </div>
                 <div class="flex flex-row">
                     <div
-                        class="bg-[#feffef] w-24 md:w-20 text-center m-4 mr-1 md:mr-4 rounded-b-small-mobile max-h-10 shadow-[40px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset]">
+                        class="bg-[#feffef] w-[15%] md:w-20 text-center m-4 mr-1 md:mr-4 rounded-b-small-mobile max-h-10 shadow-[40px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset]">
                         <p class="text-normal-desktop text-[#899443] font-extrabold">10.</p>
                     </div>
-                    <div class="m-4 ml-1 md:ml-4">
-                        <p class="text-smole-mobile md:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, hic? Officiis dolores,
-                            tenetur aliquam dolor laboriosam obcaecati non est vel?</p>
+                    <div class="m-4 ml-1 md:ml-4 w-[85%]">
+                        <p class="text-smole-mobile md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit enim molestiae ipsum possimus doloribus minima repudiandae qui praesentium iusto adipisci accusamus, quas doloremque minus maiores ex nulla debitis optio quasi dolores quidem! Impedit doloremque sit sunt eos quidem doloribus, optio libero, maxime ducimus quas quod neque, beatae quisquam? Eum, amet? Eius nesciunt tempora unde magnam itaque animi iusto, laborum tempore vitae perferendis optio dolore ut nisi recusandae eum vero. Placeat ex mollitia accusamus earum suscipit tempora repudiandae error fuga aut nulla qui soluta, natus itaque veniam, excepturi sint expedita eveniet eos? Consectetur neque excepturi corrupti laudantium, animi voluptas quae!?</p>
                         <div class="w-full h-1 bg-[#feffef] mt-2"></div>
                     </div>
-                </div>
-                <div class="flex flex-row">
+                </div><div class="flex flex-row">
                     <div
-                        class="bg-[#feffef] w-24 md:w-20 text-center m-4 mr-1 md:mr-4 rounded-b-small-mobile max-h-10 shadow-[40px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset]">
-                        <p class="text-normal-desktop text-[#899443] font-extrabold">10.</p>
+                        class="bg-[#feffef] w-[15%] md:w-20 text-center m-4 mr-1 md:mr-4 rounded-b-small-mobile max-h-10 shadow-[40px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset]">
+                        <p class="text-normal-desktop text-[#899443] font-extrabold">1.</p>
                     </div>
-                    <div class="m-4 ml-1 md:ml-4">
-                        <p class="text-smole-mobile md:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, hic? Officiis dolores,
-                            tenetur aliquam dolor laboriosam obcaecati non est vel?</p>
+                    <div class="m-4 ml-1 md:ml-4 w-[85%]">
+                        <p class="text-smole-mobile md:text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit enim molestiae ipsum possimus doloribus minima repudiandae qui praesentium iusto adipisci accusamus, quas doloremque minus maiores ex nulla debitis optio quasi dolores quidem! Impedit doloremque sit sunt eos quidem doloribus, optio libero, maxime ducimus quas quod neque, beatae quisquam? Eum, amet? Eius nesciunt tempora unde magnam itaque animi iusto, laborum tempore vitae perferendis optio dolore ut nisi recusandae eum vero. Placeat ex mollitia accusamus earum suscipit tempora repudiandae error fuga aut nulla qui soluta, natus itaque veniam, excepturi sint expedita eveniet eos? Consectetur neque excepturi corrupti laudantium, animi voluptas quae!?</p>
                         <div class="w-full h-1 bg-[#feffef] mt-2"></div>
                     </div>
                 </div>
@@ -153,32 +154,27 @@
                 <div
                     class="item-misi flex md:gap-5 gap-2 mt-5 md:mx-0 bg-button-color bg-[url('/img/Vector.svg')] bg-right-bottom bg-no-repeat w-full md:px-5 md:py-4 px-3 py-2 items-start md:rounded-normal-desktop rounded-normal-mobile shadow-lime-900 shadow-lg overflow-hidden">
                     <div
-                        class="number-container bg-white  md:pb-5 md:w-72 pb-2 w-44 rounded-b-normal-mobile md:rounded-b-normal-desktop relative shadow-[47px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset] md:-top-4 -top-2">
+                        class="number-container bg-white  md:pb-5 pb-2 w-[25%] lg:w-[20%] rounded-b-normal-mobile md:rounded-b-normal-desktop relative shadow-[47px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset] md:-top-4 -top-2">
                         <p class="number text-big-desktop md:text-[80px] font-extrabold text-button-color text-center">
                             1.</p>
                     </div>
-                    <div class="text-contrainer font-poppins text-white">
+                    <div class="text-contrainer font-poppins text-white w-[75%] lg:w-[80%]">
                         <span class="title font-bold italic text-normal-mobile md:text-normal-desktop">Lorem,
                             ipsum.</span>
-                        <p class="description text-smole-mobile md:text-base pt-0 md:pt-3 md:text-center">Lorem ipsum
-                            dolor sit amet consectetur, adipisicing elit. Sint natus, fugiat nisi enim dolorem laborum
-                            at. Est exercitationem commodi quibusdam.</p>
+                        <p class="description text-smole-mobile md:text-base pt-0 md:pt-3 md:text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur quod ducimus et facilis quasi nam maiores optio mollitia omnis modi obcaecati quos, laboriosam ipsam asperiores doloremque perferendis, facere distinctio animi atque reiciendis voluptas illo ullam debitis. Numquam aut voluptates sed ullam. Quos sint a aperiam quis voluptatem vero illo voluptate rerum. Culpa suscipit deserunt vel molestias dicta totam consectetur, sunt odio cumque enim vitae exercitationem numquam maiores, fugit quam architecto quia qui molestiae. Consequuntur, accusamus libero. Expedita qui, molestias quod, sint laborum minima veniam debitis exercitationem ipsum illum porro et similique provident incidunt repellendus, praesentium omnis labore! Impedit, fugit consequatur?</p>
                     </div>
                 </div>
-
                 <div
                     class="item-misi flex md:gap-5 gap-2 mt-5 md:mx-0 bg-button-color bg-[url('/img/Vector.svg')] bg-right-bottom bg-no-repeat w-full md:px-5 md:py-4 px-3 py-2 items-start md:rounded-normal-desktop rounded-normal-mobile shadow-lime-900 shadow-lg overflow-hidden">
                     <div
-                        class="number-container bg-white  md:pb-5 md:w-72 pb-2 w-44 rounded-b-normal-mobile md:rounded-b-normal-desktop relative shadow-[47px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset] md:-top-4 -top-2">
+                        class="number-container bg-white  md:pb-5 pb-2 w-[25%] lg:w-[20%] rounded-b-normal-mobile md:rounded-b-normal-desktop relative shadow-[47px_-20px_50px_-57px_rgba(0,0,0,0.75)_inset] md:-top-4 -top-2">
                         <p class="number text-big-desktop md:text-[80px] font-extrabold text-button-color text-center">
                             10.</p>
                     </div>
-                    <div class="text-contrainer font-poppins text-white">
+                    <div class="text-contrainer font-poppins text-white w-[75%] lg:w-[80%]">
                         <span class="title font-bold italic text-normal-mobile md:text-normal-desktop">Lorem,
                             ipsum.</span>
-                        <p class="description text-smole-mobile md:text-base pt-0 md:pt-3 md:text-center">Lorem ipsum
-                            dolor sit amet consectetur, adipisicing elit. Sint natus, fugiat nisi enim dolorem laborum
-                            at. Est exercitationem commodi quibusdam.</p>
+                        <p class="description text-smole-mobile md:text-base pt-0 md:pt-3 md:text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur quod ducimus et facilis quasi nam maiores optio mollitia omnis modi obcaecati quos, laboriosam ipsam asperiores doloremque perferendis, facere distinctio animi atque reiciendis voluptas illo ullam debitis. Numquam aut voluptates sed ullam. Quos sint a aperiam quis voluptatem vero illo voluptate rerum. Culpa suscipit deserunt vel molestias dicta totam consectetur, sunt odio cumque enim vitae exercitationem numquam maiores, fugit quam architecto quia qui molestiae. Consequuntur, accusamus libero. Expedita qui, molestias quod, sint laborum minima veniam debitis exercitationem ipsum illum porro et similique provident incidunt repellendus, praesentium omnis labore! Impedit, fugit consequatur?</p>
                     </div>
                 </div>
             </div>
@@ -194,72 +190,79 @@
 
     <!-- Modal CV -->
     <div class="fixed hidden top-20 z-40 inset-x-0 pb-4 items-center justify-center" id="modalCV">
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg shadow-[rgb(137, 148, 67)] transform transition-all w-max">
+        <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg shadow-[rgb(137, 148, 67)] transform transition-all w-max">
             <div class="flex bg-button-color px-4 pt-4 pb-4 rounded-t-lg justify-between items-center">
                 <h2 class="text-white text-lg font-semibold">Curriculum Vitae</h2>
-                <button class="close text-white font-bold py-2 px-4 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600">
+                <button
+                    class="close text-white font-bold py-2 px-4 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600">
                     X
                 </button>
             </div>
-        <div class="px-4 py-4">
-            <div class="content-between items-center flex">
-                <iframe src="https://drive.google.com/file/d/1P_Vcaz5VP0mmG0UbGw-MVyz1Ij5h0Sae/preview" width="640" height="480" allow="autoplay">
-                </iframe>
+            <div class="px-4 py-4">
+                <div class="content-between items-center flex">
+                    <iframe src="https://drive.google.com/file/d/1P_Vcaz5VP0mmG0UbGw-MVyz1Ij5h0Sae/preview" width="640"
+                        height="480" allow="autoplay">
+                    </iframe>
+                </div>
             </div>
         </div>
-        </div>
-        <div id="myBackdrop" class="opacity-25 fixed inset-0 -z-10 bg-black"></div>
+        <div id="Backdrop1" class="opacity-25 fixed inset-0 -z-10 bg-black"></div>
     </div>
 
     <!-- Modal Kampanye -->
     <div class="fixed hidden top-20 z-40 inset-x-0 pb-4 items-center justify-center" id="modalKampanye">
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg shadow-[rgb(137, 148, 67)] transform transition-all w-max">
+        <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg shadow-[rgb(137, 148, 67)] transform transition-all w-max">
             <div class="flex bg-button-color px-4 pt-4 pb-4 rounded-t-lg justify-between items-center">
                 <h2 class="text-white text-lg font-semibold">Laporan Dana Kampanye</h2>
-                <button class="close text-white font-bold py-2 px-4 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600">
+                <button
+                    class="close text-white font-bold py-2 px-4 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600">
                     X
                 </button>
             </div>
-        <div class="px-4 py-4">
-            <div class="content-between items-center flex">
-                <iframe src="https://drive.google.com/file/d/1c8YLEidAfRIxnOAy6iHacl6AQerjP9xP/preview" width="640" height="480" allow="autoplay">
-                </iframe>
+            <div class="px-4 py-4">
+                <div class="content-between items-center flex">
+                    <iframe src="https://drive.google.com/file/d/1c8YLEidAfRIxnOAy6iHacl6AQerjP9xP/preview" width="640"
+                        height="480" allow="autoplay">
+                    </iframe>
+                </div>
             </div>
         </div>
-        </div>
-        <div id="myBackdrop" class="opacity-25 fixed inset-0 -z-10 bg-black"></div>
+        <div id="Backdrop2" class="opacity-25 fixed inset-0 -z-10 bg-black"></div>
     </div>
 
     <script>
         var modalCV = document.getElementById("modalCV");
         var modalKampanye = document.getElementById("modalKampanye");
-        var backdrop = document.getElementById("myBackdrop");
+        var backdrop1 = document.getElementById("Backdrop1");
+        var backdrop2 = document.getElementById("Backdrop2");
         var btnCV = document.getElementById("btnCV");
         var btnKampanye = document.getElementById("btnKampanye");
         var closeBtnCV = document.getElementsByClassName("close")[0];
         var closeBtnKampanye = document.getElementsByClassName("close")[1];
 
-        btnCV.onclick = function() {
-        modalCV.style.display = "flex";
+        btnCV.onclick = function () {
+            modalCV.style.display = "flex";
         }
-        btnKampanye.onclick = function() {
-        modalKampanye.style.display = "flex";
+        btnKampanye.onclick = function () {
+            modalKampanye.style.display = "flex";
         }
-        closeBtnCV.onclick = function() {
-        modalCV.style.display = "none";
+        closeBtnCV.onclick = function () {
+            modalCV.style.display = "none";
         }
-        closeBtnKampanye.onclick = function() {
-        modalKampanye.style.display = "none";
+        closeBtnKampanye.onclick = function () {
+            modalKampanye.style.display = "none";
         }
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modalCV) {
                 modalCV.style.display = "none";
-            }else if (event.target == backdrop){
+            } else if (event.target == backdrop1) {
                 modalCV.style.display = "none";
             }
-            if (event.target == modalKampanye){
+            if (event.target == modalKampanye) {
                 modalKampanye.style.display = "none";
-            } else if (event.target == backdrop){
+            } else if (event.target == backdrop2) {
                 modalKampanye.style.display = "none";
             }
         }
