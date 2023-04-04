@@ -561,10 +561,6 @@ video {
   position: relative;
 }
 
-.sticky{
-  position: sticky;
-}
-
 .inset-0{
   top: 0px;
   right: 0px;
@@ -603,14 +599,6 @@ video {
 
 .top-20{
   top: 5rem;
-}
-
-.-top-\[100vh\]{
-  top: -100vh;
-}
-
-.-top-\[50vh\]{
-  top: -50vh;
 }
 
 .z-50{
@@ -670,6 +658,11 @@ video {
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.mx-14{
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
 .mx-6{
@@ -771,6 +764,14 @@ video {
   margin-top: 4rem;
 }
 
+.-mt-\[60rem\]{
+  margin-top: -60rem;
+}
+
+.mt-48{
+  margin-top: 12rem;
+}
+
 .ml-3{
   margin-left: 0.75rem;
 }
@@ -797,10 +798,6 @@ video {
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mt-52{
-  margin-top: 13rem;
 }
 
 .block{
@@ -835,6 +832,10 @@ video {
   height: auto;
 }
 
+.h-48{
+  height: 12rem;
+}
+
 .h-40{
   height: 10rem;
 }
@@ -851,20 +852,8 @@ video {
   height: 4rem;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.h-80{
-  height: 20rem;
-}
-
 .max-h-10{
   max-height: 2.5rem;
-}
-
-.min-h-screen{
-  min-height: 100vh;
 }
 
 .w-full{
@@ -915,16 +904,16 @@ video {
   width: 10rem;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .w-9\/12{
   width: 75%;
 }
 
 .w-10\/12{
   width: 83.333333%;
+}
+
+.w-1\/2{
+  width: 50%;
 }
 
 .w-56{
@@ -960,6 +949,11 @@ video {
   flex-grow: 1;
 }
 
+.-translate-y-20{
+  --tw-translate-y: -5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-translate-y-2{
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -986,10 +980,6 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-1{
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .flex-row{
   flex-direction: row;
 }
@@ -1000,10 +990,6 @@ video {
 
 .flex-wrap{
   flex-wrap: wrap;
-}
-
-.content-center{
-  align-content: center;
 }
 
 .content-between{
@@ -1221,10 +1207,6 @@ video {
   background-image: url('/img/Vector.svg');
 }
 
-.bg-\[url\(\'\.\.\/img\/Frame_19\.svg\'\)\]{
-  background-image: url('../img/Frame_19.svg');
-}
-
 .bg-cover{
   background-size: cover;
 }
@@ -1239,10 +1221,6 @@ video {
 
 .bg-right-bottom{
   background-position: right bottom;
-}
-
-.bg-center{
-  background-position: center;
 }
 
 .bg-no-repeat{
@@ -1356,21 +1334,6 @@ video {
   padding-bottom: 2px;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.py-48{
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-}
-
 .pt-16{
   padding-top: 4rem;
 }
@@ -1425,14 +1388,6 @@ video {
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
-}
-
-.pb-52{
-  padding-bottom: 13rem;
 }
 
 .text-center{
@@ -1761,6 +1716,10 @@ body{
     top: 16rem;
   }
 
+  .md\:bottom-0{
+    bottom: 0px;
+  }
+
   .md\:-top-4{
     top: -1rem;
   }
@@ -1801,8 +1760,12 @@ body{
     margin-top: 3rem;
   }
 
-  .md\:mt-36{
-    margin-top: 9rem;
+  .md\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .md\:-mt-72{
+    margin-top: -18rem;
   }
 
   .md\:mt-60{
@@ -1850,6 +1813,10 @@ body{
     width: 16rem;
   }
 
+  .md\:w-48{
+    width: 12rem;
+  }
+
   .md\:w-20{
     width: 5rem;
   }
@@ -1867,12 +1834,16 @@ body{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:items-center{
     align-items: center;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
   }
 
   .md\:gap-5{
@@ -1894,14 +1865,6 @@ body{
 
   .md\:bg-transparent{
     background-color: transparent;
-  }
-
-  .md\:bg-\[url\(\'\.\.\/img\/Frame_19\.svg\'\)\]{
-    background-image: url('../img/Frame_19.svg');
-  }
-
-  .md\:bg-cover{
-    background-size: cover;
   }
 
   .md\:p-16{
@@ -2021,8 +1984,8 @@ body{
     margin-top: 20rem;
   }
 
-  .lg\:mt-52{
-    margin-top: 13rem;
+  .lg\:-mt-\[40rem\]{
+    margin-top: -40rem;
   }
 
   .lg\:-mt-28{
@@ -2045,10 +2008,6 @@ body{
     margin-top: 56rem;
   }
 
-  .lg\:mt-6{
-    margin-top: 1.5rem;
-  }
-
   .lg\:block{
     display: block;
   }
@@ -2067,6 +2026,10 @@ body{
 
   .lg\:w-\[50vw\]{
     width: 50vw;
+  }
+
+  .lg\:w-\[19\.5rem\]{
+    width: 19.5rem;
   }
 
   .lg\:w-\[32rem\]{
